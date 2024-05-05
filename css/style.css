@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 900px;
+    max-height: 800px;
+    padding-inline: auto;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.cardleft,
+.cardrigth{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    border: 3px solid black;
+}
+.cardrigth .head,
+.cardleft .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-bottom: 3px solid black;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.cardrigth{
+    background-color: #1f74b189;
+}
+
+.cardleft{
+    background-color: #ff00005a;
+}
+
+.cardleft .head{
+    background-color: #ff00005a;
+}
+
+.cardrigth .head{
+    background-color: #1f74b189;
+}
+.cardrigth .head span,
+.cardleft .head span{
+    font-size: 25px;
+}
+
+.cardrigth .head .cost,
+.cardleft .head .cost{
+    display: flex;
+    align-items: center;
+}
+
+.cardrigth .head img,
+.cardleft .head img{
+    width: 25px;
+    height: 25px;
+}
+
+
+.cardrigth .body img,
+.cardleft .body img{
+    width: 100%;
+    height: 300px;
+    border: 3px solid black;
+    border-top: none;
+    margin-bottom: 20px;
+}
+
+.cardrigth .body img{
+    background-color: #399ce3;
+}
+.cardleft .body img{
+    background-color: #ff00007a;
+}
+.cardrigth .body,
+.cardleft .body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.cardleft .body .stats,
+.cardrigth .body .stats{    
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.57);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cardleft .body .stats .power,
+.cardrigth .body .stats .power,
+.cardleft .body .stats .defense,
+.cardrigth .body .stats .defense{
+    display: flex;
+}
+
+.cardleft .body .stats img,
+.cardrigth .body .stats img{
+    border: none;
+    background-color: rgba(240, 248, 255, 0.273);
+    width: 20px;
+    height: 20px;
+}
